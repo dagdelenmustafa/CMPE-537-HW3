@@ -145,9 +145,7 @@ if __name__ == '__main__':
     model = NN.Sequential([
         NN.Linear(X_train.shape[1], 500),
         NN.ReLU(),
-        NN.Linear(500, 1000),
-        NN.ReLU(),
-        NN.Linear(1000, len(class_labels))
+        NN.Linear(500, len(class_labels))
     ])
     model.set_lr(args.learning_rate)
     best_model = model
