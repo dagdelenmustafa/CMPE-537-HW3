@@ -3,12 +3,9 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.metrics import confusion_matrix, classification_report
 
 import os
-import glob
-import math
 import cv2
 import numpy as np
 import pickle
-import time
 import matplotlib.pyplot as plt
 
 def plot_confusion_matrix(cm, target_names, title='Confusion matrix', cmap=None, normalize=True):
